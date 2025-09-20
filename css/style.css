@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #1e5799, #207cca);
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.9;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 90%;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.diagram {
+  width: 100%;
+  max-width: 280px;
+  margin: 20px auto;
+  display: block;
+  opacity: 0.85;
+}
+
+.section-title {
+  text-align: center;
+  margin: 24px 0 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.btn-calcular {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 24px 0;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-calcular:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+/* Recuadro de resultados profesional */
+.result-box {
+  background-color: #e3f2fd;
+  border: 2px solid #90caf9;
+  border-radius: 14px;
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #1565c0;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(144, 202, 249, 0.3);
+  margin-top: 16px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.result-box p {
+  margin: 0;
+  font-weight: 500;
+  color: #42a5f5;
+}
+
+.result-box strong {
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+    margin: 12px;
+  }
+  .section-title {
+    font-size: 1.1rem;
+  }
+  .btn-calcular {
+    padding: 14px;
+    font-size: 1rem;
+  }
+  .result-box {
+    padding: 20px 16px;
+    font-size: 1rem;
+  }
+}
