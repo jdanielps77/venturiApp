@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caudal en Tubo Venturi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <!--<img src="" alt="Icono de gota" />-->
+    <h1>Caudal en Tubo Venturi</h1>
+  </header>
+
+  <div class="container">
+    <img src="img/venturi.png" alt="Diagrama del tubo Venturi" class="diagram" />
+
+    <div class="section-title">Datos de Entrada (en pulgadas)</div>
+
+    <div class="input-group">
+      <label for="d1">Diámetro de tubería D1 (plg)</label>
+      <input type="number" id="d1" step="0.01" placeholder="Ej: 4.0" />
+    </div>
+
+    <div class="input-group">
+      <label for="d2">Diámetro del orificio D2 (plg)</label>
+      <input type="number" id="d2" step="0.01" placeholder="Ej: 2.0" />
+    </div>
+
+    <div class="input-group">
+      <label for="h">Diferencia piezométrica h (plg)</label>
+      <input type="number" id="h" step="0.01" placeholder="Ej: 10.0" />
+    </div>
+
+    <button class="btn-calcular" onclick="calcularCaudal()">Calcular Caudal</button>
+
+    <!-- Recuadro de resultados profesional -->
+    <div class="result-box" id="resultado">
+      <p>El resultado aparecerá aquí después de calcular.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
